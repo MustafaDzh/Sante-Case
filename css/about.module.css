@@ -1,0 +1,104 @@
+.section_about {
+  padding-top: 100px;
+  padding-bottom: 216px;
+}
+.section_about-wrapper--title {
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .section_about-wrapper svg {
+    width: 200px;
+    height: 50px;
+  }
+}
+.section_about-wrapper--content {
+  padding-top: 57px;
+  display: flex;
+  gap: 21px;
+}
+@media screen and (max-width: 1024px) {
+  .section_about-wrapper--content {
+    flex-direction: column;
+  }
+}
+.section_about-wrapper--content_text {
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  width: 50%;
+  padding-top: 81px;
+}
+@media screen and (max-width: 1024px) {
+  .section_about-wrapper--content_text {
+    width: 100%;
+    padding-top: 0px;
+  }
+}
+.section_about-wrapper--content_text .title {
+  color: #4A5C5C;
+  font-size: 36px;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1280px) {
+  .section_about-wrapper--content_text {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section_about-wrapper--content_text {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_about-wrapper--content_text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_about-wrapper--content_text {
+    font-size: 16px;
+  }
+}
+.section_about-wrapper--content_text-desc {
+  font-size: 20px;
+  line-height: 130%;
+  color: #593932;
+}
+@media screen and (max-width: 480px) {
+  .section_about-wrapper--content_text-desc {
+    margin-top: 30px;
+    width: 98%;
+  }
+}
+.section_about-wrapper--content_card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.section_about-wrapper--content_card-info {
+  width: 54%;
+  position: absolute;
+  height: calc(100% - 32px - 17px);
+  top: 32px;
+  left: 0;
+  transform: translateY(0);
+  padding: 48px;
+  background-color: #F6F2EE;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.section_about-wrapper--content_card-image {
+  height: 100%;
+  z-index: 2;
+}
+.section_about-wrapper--content_card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=about.module.css.map */

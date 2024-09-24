@@ -1,5 +1,5 @@
 @import "./hero.module.scss";
-
+@import "./about.module.scss";
 
 * {
     padding: 0;
@@ -73,7 +73,7 @@ html body ul {
     width: 98%;
     max-width: calc(1440px - 2%);
     margin: 0 auto;
-    padding: 0px 50px;
+    // padding: 0px 50px;
 
     @media screen and (max-width:480px) {
         padding: 0px 20px;
@@ -81,6 +81,126 @@ html body ul {
 
     @media screen and (max-width:350px) {
         padding: 0px 10px;
+    }
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+    .miniNav {
+        position: absolute;
+        top: 1200px;
+        right: 80px;
+        height: calc(100% - 1200px);
+        z-index: 1000;
+
+        @media screen and (max-width:1920px) {
+            top: 1100px;
+        }
+
+        @media screen and (max-width:1440px) {
+            top: 1000px;
+            right: 50px;
+        }
+
+        &--nav {
+            @media screen and (max-width: 1024px) {
+                margin-right: 10px;
+                display: none;
+            }
+
+            &_content {
+                position: sticky;
+                top: 0;
+
+                .line {
+                    width: 1px;
+                    height: 8px;
+                    background: #333;
+                }
+
+                .nav-content {
+                    display: flex;
+                    width: 32px;
+                    height: 32px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background: #FFF;
+                    position: relative;
+                    cursor: pointer;
+                    transition: background-color 0.5s ease-in-out;
+
+                    @media screen and (max-width: 1024px) {
+                        width: 22px;
+                        height: 22px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    &--text {
+                        position: absolute;
+                        top: 50%;
+                        right: calc(100% + 10px);
+                        transform: translateY(-50%);
+                        opacity: 0;
+                        white-space: nowrap;
+                        transition: opacity 0.5s ease-in-out, color 0.5s ease-in-out;
+
+                        @media screen and (max-width: 1024px) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    &:hover,
+                    &.active {
+                        background-color: #FFCE34;
+
+                        .nav-content--text {
+                            opacity: 1;
+                            color: #FFCE34;
+                        }
+                    }
+                }
+
+                &-stage {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    align-items: center;
+
+                    @media screen and (max-width: 768px) {
+                        gap: 5px;
+                    }
+
+                    p {
+                        svg {
+                            @media screen and (max-width: 768px) {
+                                width: 7px;
+                                height: 8px;
+                            }
+                        }
+                    }
+                }
+
+                &.fixed {
+                    position: fixed !important;
+                    z-index: 1000;
+                    right: 80px;
+                    top: 0;
+
+                    @media screen and (max-width:1440px) {
+                        right: 50px;
+                    }
+                }
+            }
+        }
     }
 }
 
