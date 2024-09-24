@@ -2,6 +2,20 @@
     padding-top: 100px;
     padding-bottom: 216px;
 
+    @media screen and (max-width:1280px) {
+        padding-top: 80px;
+        padding-bottom: 150px;
+    }
+
+    @media screen and (max-width:768px) {
+        padding-bottom: 120px;
+    }
+
+    @media screen and (max-width:480px) {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
     &-wrapper {
         &--title {
             text-align: center;
@@ -33,6 +47,10 @@
                 @media screen and (max-width:1024px) {
                     width: 100%;
                     padding-top: 0px;
+                }
+
+                @media screen and (max-width:480px) {
+                    gap: 10px;
                 }
 
                 .title {

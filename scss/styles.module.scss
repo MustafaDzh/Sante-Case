@@ -1,5 +1,6 @@
 @import "./hero.module.scss";
 @import "./about.module.scss";
+@import "./overview.module.scss";
 
 * {
     padding: 0;
@@ -73,7 +74,7 @@ html body ul {
     width: 98%;
     max-width: calc(1440px - 2%);
     margin: 0 auto;
-    // padding: 0px 50px;
+    padding: 0px 50px;
 
     @media screen and (max-width:480px) {
         padding: 0px 20px;
