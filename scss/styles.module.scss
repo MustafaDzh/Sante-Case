@@ -1,6 +1,7 @@
 @import "./hero.module.scss";
 @import "./about.module.scss";
 @import "./overview.module.scss";
+@import "./design.module.scss";
 
 * {
     padding: 0;
@@ -209,6 +210,8 @@ html body ul {
     font-size: 36px;
     line-height: 110%;
     z-index: 1;
+    color: #4A5C5C;
+    text-transform: uppercase;
 
     @media screen and (max-width: 1280px) {
         font-size: 30px;
@@ -243,4 +246,11 @@ html body ul {
     @media screen and (max-width: 480px) {
         font-size: 14px;
     }
+}
+
+.line {
+    width: 359px;
+    height: 1px;
+    opacity: 0.5;
+    background: #7C5A41;
 }
