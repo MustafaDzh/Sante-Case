@@ -71,7 +71,7 @@ html body {
         background: #7C5A41;
 
         @media screen and (max-width: 1440px) {
-            width: 110px; 
+            width: 110px;
         }
 
         @media screen and (max-width:1280px) {
@@ -97,12 +97,14 @@ html body {
         opacity: 0.5;
         background: #7C5A41;
 
-        @media screen and (min-width:2560px ) {
+        @media screen and (min-width:2560px) {
             width: 679px;
         }
+
         @media screen and (max-width:1440px) {
             width: 110px;
         }
+
         @media screen and (max-width:1280px) {
             width: 30px;
         }
