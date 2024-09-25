@@ -2,6 +2,8 @@
 @import "./about.module.scss";
 @import "./overview.module.scss";
 @import "./design.module.scss";
+@import "./sitemap.module.scss";
+@import "./desktop.module.scss";
 
 * {
     padding: 0;
@@ -58,6 +60,53 @@ html body {
 .title-main {
     display: flex;
     align-items: center;
+    gap: 17px;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 359px;
+        height: 1px;
+        opacity: 0.5;
+        background: #7C5A41;
+
+        @media screen and (max-width: 1440px) {
+            width: 110px; 
+        }
+
+        @media screen and (max-width:1280px) {
+            width: 30px;
+        }
+
+        @media screen and (min-width:2560px) {
+            width: 679px;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 359px;
+        height: 1px;
+        opacity: 0.5;
+        background: #7C5A41;
+
+        @media screen and (min-width:2560px ) {
+            width: 679px;
+        }
+        @media screen and (max-width:1440px) {
+            width: 110px;
+        }
+        @media screen and (max-width:1280px) {
+            width: 30px;
+        }
+    }
 }
 
 
@@ -73,9 +122,8 @@ html body ul {
 
 .section {
     width: 98%;
-    max-width: calc(1440px - 2%);
+    max-width: calc(1210px - 2%);
     margin: 0 auto;
-    padding: 0px 50px;
 
     @media screen and (max-width:480px) {
         padding: 0px 20px;

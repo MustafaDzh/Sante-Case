@@ -67,7 +67,7 @@
   flex-direction: column;
   gap: 54px;
   color: #2E3140;
-  width: 89%;
+  width: 100%;
 }
 .section_overview-wrapper--content_top-items--item .text-card .title {
   color: #4A5C5C;
