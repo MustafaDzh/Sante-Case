@@ -1,7 +1,5 @@
 .section_desktop {
     padding-top: 126px;
-    position: relative;
-    overflow: hidden;
 
     @media screen and (max-width: 1024px) {
         padding-top: 100px;
@@ -47,7 +45,7 @@
                 &-title {
                     display: flex;
                     flex-direction: column;
-                    gap: 25px;
+                    gap: 60px;
                     width: 70%;
 
                     @media screen and (max-width: 1440px) {
@@ -81,14 +79,14 @@
                 @media screen and (max-width: 1280px) {
                     width: 100%;
                     padding: 0px 50px;
-                    transform: translate(0px, 0px); // Reset for smaller screens
+                    transform: translate(0px, 0px);
                 }
 
                 @media screen and (max-width: 1024px) {
                     width: 100%;
                     margin-top: 50px;
                     padding: 0px 50px;
-                    transform: translate(0px, 0px); // Reset for smaller screens
+                    transform: translate(0px, 0px);
                 }
 
                 @media screen and (max-width: 1024px) {
@@ -102,7 +100,7 @@
                 }
 
                 &-text {
-                    width: 82%;
+                    width: 70%;
                     display: flex;
                     flex-direction: column;
                     gap: 100px;

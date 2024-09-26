@@ -80,6 +80,7 @@
 }
 .section_overview-wrapper--content_top-items--item .text-card .text {
   min-height: 182px;
+  width: 90%;
 }
 .section_overview-wrapper--content_top-items--item .text-card .text .desc span {
   color: #9DB8D8;
@@ -140,11 +141,12 @@
 }
 .section_overview-wrapper--content_bottom-icons {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 128px;
   width: 82%;
-  height: 348px;
-  justify-content: center;
   background: #F9F9F9;
+  padding: 40px 0;
 }
 @media screen and (max-width: 1024px) {
   .section_overview-wrapper--content_bottom-icons {
@@ -161,38 +163,42 @@
   .section_overview-wrapper--content_bottom-icons {
     flex-direction: column;
     align-items: center;
-    height: unset;
+    width: 90%;
     padding: 50px 0px;
   }
 }
 .section_overview-wrapper--content_bottom-icons .icon {
-  width: 226px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 39px;
+  gap: 20px;
   text-align: center;
+  width: 226px;
+  min-height: 300px;
 }
 @media screen and (max-width: 768px) {
   .section_overview-wrapper--content_bottom-icons .icon {
-    gap: 30px;
+    gap: 15px;
   }
 }
 @media screen and (max-width: 480px) {
   .section_overview-wrapper--content_bottom-icons .icon {
-    gap: 25px;
+    gap: 10px;
+    width: 100%;
   }
 }
 .section_overview-wrapper--content_bottom-icons .icon .icon-svg {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 15px;
 }
 .section_overview-wrapper--content_bottom-icons .icon .icon-text {
   display: flex;
   justify-content: center;
   width: 100%;
+  min-height: 80px;
 }
 .section_overview-wrapper--content_bottom-icons .icon .icon-text .desc {
   font-size: 16px;

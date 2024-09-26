@@ -20,6 +20,11 @@
 }
 .section_design-wrapper--content_items .text-card .desc {
   height: 100%;
+  width: 54.3%;
+}
+.section_design-wrapper--content_items .text-card .desc.font {
+  min-height: 89px;
+  height: 100%;
   width: 90%;
 }
 @media screen and (max-width: 480px) {
@@ -55,7 +60,7 @@
   top: 16px;
   right: 55%;
   transform: translateY(0);
-  padding: 31px 32px 0px 39px;
+  padding: 39px 32px 20px 31px;
   background-color: #F6F2EE;
   display: flex;
   flex-direction: column;
@@ -80,7 +85,6 @@
 }
 .section_design-wrapper--content_items .text-card .svg-icon {
   display: flex;
-  justify-content: center;
 }
 .section_design-wrapper--content_items-fonts {
   padding-top: 19px;
@@ -89,6 +93,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  padding-top: 38px;
 }
 @media screen and (max-width: 768px) {
   .section_design-wrapper--content_items-fonts-font {
@@ -184,45 +189,18 @@
   }
 }
 .section_design-wrapper--content_items-buttons {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.section_design-wrapper--content_items-buttons .titles-wrapper {
+.section_design-wrapper--content_items-buttons--left {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 20px;
+  flex-direction: column;
+  gap: 31px;
 }
-.section_design-wrapper--content_items-buttons .titles-wrapper .title-main,
-.section_design-wrapper--content_items-buttons .titles-wrapper .menu {
-  width: 100%;
-  text-align: center;
-}
-.section_design-wrapper--content_items-buttons .titles-wrapper .menu {
-  justify-content: flex-end;
-}
-.section_design-wrapper--content_items-buttons .svgs-wrapper {
+.section_design-wrapper--content_items-buttons--right {
   display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.section_design-wrapper--content_items-buttons .svgs-wrapper .svg-container {
-  display: flex;
-  justify-content: space-between;
-}
-.section_design-wrapper--content_items-buttons .svgs-wrapper .fistButton,
-.section_design-wrapper--content_items-buttons .svgs-wrapper .svg-icon {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-.section_design-wrapper--content_items-buttons .svgs-wrapper .svg-icon {
-  justify-content: flex-end;
-}
-.section_design-wrapper--content_items-buttonsI {
-  padding-top: 31px;
+  flex-direction: column;
+  gap: 38px;
 }
 .section_design-wrapper--content_items-icons {
   padding-top: 174px;

@@ -23,7 +23,13 @@
 
                     .desc {
                         height: 100%;
-                        width: 90%;
+                        width: 54.3%;
+
+                        &.font {
+                            min-height: 89px;
+                            height: 100%;
+                            width: 90%;
+                        }
 
                         @media screen and (max-width:480px) {
                             min-height: unset;
@@ -64,7 +70,7 @@
                             top: 16px;
                             right: 55%;
                             transform: translateY(0);
-                            padding: 31px 32px 0px 39px;
+                            padding: 39px 32px 20px 31px;
                             background-color: #F6F2EE;
                             display: flex;
                             flex-direction: column;
@@ -101,9 +107,7 @@
 
                     .svg-icon {
                         display: flex;
-                        justify-content: center;
                     }
-
                 }
 
                 &-fonts {
@@ -113,6 +117,7 @@
                         display: flex;
                         width: 100%;
                         justify-content: space-between;
+                        padding-top: 38px;
 
                         @media screen and (max-width:768px) {
                             flex-direction: column;
@@ -221,54 +226,20 @@
                 }
 
                 &-buttons {
-                    display: flex;
-                    flex-direction: column;
                     align-items: center;
                     width: 100%;
 
-                    .titles-wrapper {
+                    &--left {
                         display: flex;
-                        justify-content: space-between;
-                        width: 100%;
-                        padding: 20px;
-
-                        .title-main,
-                        .menu {
-                            width: 100%;
-                            text-align: center;
-                        }
-
-                        .menu {
-                            justify-content: flex-end;
-                        }
+                        flex-direction: column;
+                        gap: 31px;
                     }
 
-                    .svgs-wrapper {
+                    &--right {
                         display: flex;
-                        justify-content: center;
-                        width: 100%;
-
-                        .svg-container {
-                            display: flex;
-                            justify-content: space-between;
-                        }
-
-                        .fistButton,
-                        .svg-icon {
-                            width: 50%;
-                            display: flex;
-                            justify-content: center;
-                        }
-
-                        .svg-icon {
-                            justify-content: flex-end;
-                        }
+                        flex-direction: column;
+                        gap: 38px;
                     }
-
-                }
-
-                &-buttonsI {
-                    padding-top: 31px;
                 }
 
                 &-icons {
