@@ -1,0 +1,120 @@
+.section_mobile {
+    padding-top: 165px;
+    position: relative;
+    background: #F6F2EE;
+
+    @media screen and (max-width:1024px) {
+        padding-top: 120px;
+    }
+
+    @media screen and (max-width:768px) {
+        padding-top: 80px;
+    }
+
+    @media screen and (max-width:480px) {
+        padding-top: 50px;
+    }
+
+    &-wrapper {
+        &--content {
+            &_title {
+                display: flex;
+                flex-direction: column;
+                gap: 29px;
+
+                @media screen and (max-width:1024px) {
+                    width: 95%;
+                }
+
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                }
+
+                .desc {
+                    min-height: 93px;
+                    height: 100%;
+                    width: 40%;
+
+                    @media screen and (max-width:768px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &_image {
+                display: flex;
+                justify-content: center;
+                transform: rotate(4.003deg);
+
+                img {
+                    z-index: 1;
+                    width: 100%;
+
+                    @media screen and (max-width:1024px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &_bottom {
+
+                &-first,
+                &-second {
+                    display: flex;
+                    align-items: center;
+                }
+
+                &-first {
+                    @media screen and (max-width:768px) {
+                        flex-direction: column;
+                    }
+                    &--title {
+                        .desc {
+                            color: var(--Brand-Gold-600, #E0A425);
+                            text-transform: uppercase;
+                            font-size: 40px;
+                            width: 80%;
+
+                            @media screen and (max-width:1280px) {
+                                font-size: 30px;
+                            }
+                            @media screen and (max-width:768px) {
+                                font-size: 25px;
+                                width: 100%;
+                            }
+
+                            @media screen and (max-width:480px) {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+
+                &-second {
+                    @media screen and (max-width:768px) {
+                        flex-direction: column-reverse;
+                    }
+                    &--text {
+                        display: flex;
+                        justify-content: flex-end;
+
+                        .desc {
+                            text-align: right;
+                            width: 57%;
+
+                            @media screen and (max-width:1024px){
+                                width: 80%;
+                                margin-right: 20px;
+                            }
+                            @media screen and (max-width:768px) {
+                                width: 100%;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
