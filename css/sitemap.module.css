@@ -23,6 +23,7 @@
   }
 }
 .section_sitemap-wrapper--content_map-text {
+  padding-top: 105px;
   width: 100%;
 }
 @media screen and (max-width: 1024px) {

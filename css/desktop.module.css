@@ -27,16 +27,6 @@
     padding: 0px 50px;
   }
 }
-@media screen and (max-width: 768px) {
-  .section_desktop-wrapper--content_top {
-    gap: 70px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section_desktop-wrapper--content_top {
-    gap: 50px;
-  }
-}
 @media screen and (max-width: 1024px) {
   .section_desktop-wrapper--content_top {
     flex-direction: column-reverse;
@@ -49,7 +39,8 @@
 }
 @media screen and (max-width: 1024px) {
   .section_desktop-wrapper--content_top-firstPhoto {
-    margin: 0 auto;
+    width: auto;
+    padding-top: 50px;
   }
 }
 .section_desktop-wrapper--content_top-firstPhoto img {
@@ -79,16 +70,22 @@
 .section_desktop-wrapper--content_top-title .desc {
   text-align: right;
 }
+@media screen and (max-width: 1024px) {
+  .section_desktop-wrapper--content_top-title .desc {
+    text-align: left;
+  }
+}
 .section_desktop-wrapper--content_bottom {
   display: flex;
   justify-content: space-between;
-  margin-top: -150px;
+  transform: translate(0px, -150px);
   margin-left: auto;
 }
 @media screen and (max-width: 1280px) {
   .section_desktop-wrapper--content_bottom {
     width: 100%;
     padding: 0px 50px;
+    transform: translate(0px, 0px);
   }
 }
 @media screen and (max-width: 1024px) {
@@ -96,6 +93,7 @@
     width: 100%;
     margin-top: 50px;
     padding: 0px 50px;
+    transform: translate(0px, 0px);
   }
 }
 @media screen and (max-width: 1024px) {
@@ -139,27 +137,31 @@
 }
 .section_desktop-wrapper--content_bottom-secondPhoto {
   width: 100%;
-  margin-top: -100px;
-  margin-left: -400px;
+  transform: translate(-130px, -20px);
   padding-bottom: 100px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
+  .section_desktop-wrapper--content_bottom-secondPhoto {
+    transform: translate(0px, -100px);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .section_desktop-wrapper--content_bottom-secondPhoto {
+    transform: translate(50px, -200px);
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 1024px) {
   .section_desktop-wrapper--content_bottom-secondPhoto {
     width: auto;
+    transform: translate(0px, 0px);
   }
 }
 .section_desktop-wrapper--content_bottom-secondPhoto img {
   width: 100%;
 }
-@media screen and (max-width: 768px) {
-  .section_desktop-wrapper--content_bottom-secondPhoto img {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section_desktop-wrapper--content_bottom-secondPhoto img {
-    width: 70%;
-  }
+.section_desktop-wrapper--content_image img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=desktop.module.css.map */
