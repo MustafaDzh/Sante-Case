@@ -59,7 +59,7 @@
 }
 @media screen and (max-width: 480px) {
   .section_overview-wrapper--content_top-items {
-    gap: 50px;
+    gap: 30px;
   }
 }
 .section_overview-wrapper--content_top-items--item .text-card {
@@ -68,6 +68,11 @@
   gap: 54px;
   color: #2E3140;
   width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .section_overview-wrapper--content_top-items--item .text-card {
+    gap: 30px;
+  }
 }
 .section_overview-wrapper--content_top-items--item .text-card .title {
   color: #4A5C5C;
@@ -186,6 +191,7 @@
   .section_overview-wrapper--content_bottom-icons .icon {
     gap: 10px;
     width: 100%;
+    min-height: 100px;
   }
 }
 .section_overview-wrapper--content_bottom-icons .icon .icon-svg {

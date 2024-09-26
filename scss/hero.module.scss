@@ -13,7 +13,7 @@
             }
 
             @media screen and (max-width: 1024px) {
-                height: 50vh;
+                height: 40vh;
             }
         }
 
@@ -143,8 +143,13 @@
 
                 }
 
-                &:hover .left svg path:nth-of-type(3) {
-                    transform: translate(15px, -15px);
+                &:hover .content svg:nth-child(2) {
+                    transform: translateX(13px);
+                    transition: transform 0.5s ease;
+
+                    @media screen and (max-width:768px) {
+                        transform: none;
+                    }
                 }
             }
         }

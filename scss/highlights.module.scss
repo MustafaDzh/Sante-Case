@@ -1,27 +1,64 @@
 .section_highlights {
     padding-top: 157px;
 
+    @media screen and (max-width:768px) {
+        padding-top: 100px;
+    }
+
+    @media screen and (max-width:480px) {
+        padding-top: 50px;
+    }
+
     &-wrapper {
         &--content {
             .text-card {
                 display: flex;
                 gap: 192px;
 
+                @media screen and (max-width:768px) {
+                    flex-direction: column;
+                    gap: 50px
+                }
+
                 &--left {
                     display: flex;
                     flex-direction: column;
                     gap: 50px;
                     width: 90%;
+
+                    @media screen and (max-width:768px) {
+                        width: 100%;
+                    }
                 }
 
                 &--right {
                     width: 90%;
+
+                    @media screen and (max-width:768px) {
+                        width: 100%;
+                    }
 
                     &_info {
                         .desc {
                             color: var(--Brand-Gold-600, #E0A425);
                             font-size: 40px;
                             text-transform: uppercase;
+
+                            @media screen and (max-width:1280px) {
+                                font-size: 35px;
+                            }
+
+                            @media screen and (max-width:1280px) {
+                                font-size: 30px;
+                            }
+
+                            @media screen and (max-width:768px) {
+                                font-size: 25px;
+                            }
+
+                            @media screen and (max-width:480px) {
+                                font-size: 18px;
+                            }
                         }
                     }
                 }
@@ -29,9 +66,25 @@
                 &--image {
                     position: relative;
 
+                    img {
+                        width: 100%;
+                    }
+
                     &_icon {
                         position: absolute;
                         bottom: 130px;
+
+                        @media screen and (max-width:768px) {
+                            bottom: 50px;
+                        }
+
+                        @media screen and (max-width:480px) {
+                            bottom: 40px;
+                        }
+
+                        svg {
+                            width: 100%;
+                        }
                     }
                 }
             }

@@ -12,7 +12,7 @@
 }
 @media screen and (max-width: 1024px) {
   .section_hero-wrapper--background {
-    height: 50vh;
+    height: 40vh;
   }
 }
 .section_hero-wrapper--content {
@@ -146,8 +146,14 @@
     height: 12px;
   }
 }
-.section_hero-wrapper--content_btn:hover .left svg path:nth-of-type(3) {
-  transform: translate(15px, -15px);
+.section_hero-wrapper--content_btn:hover .content svg:nth-child(2) {
+  transform: translateX(13px);
+  transition: transform 0.5s ease;
+}
+@media screen and (max-width: 768px) {
+  .section_hero-wrapper--content_btn:hover .content svg:nth-child(2) {
+    transform: none;
+  }
 }
 
 /*# sourceMappingURL=hero.module.css.map */

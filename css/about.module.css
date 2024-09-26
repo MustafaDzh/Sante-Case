@@ -36,6 +36,7 @@
 @media screen and (max-width: 1024px) {
   .section_about-wrapper--content {
     flex-direction: column;
+    gap: 30px;
   }
 }
 .section_about-wrapper--content_text {
@@ -63,23 +64,23 @@
   text-transform: uppercase;
 }
 @media screen and (max-width: 1280px) {
-  .section_about-wrapper--content_text {
+  .section_about-wrapper--content_text .title {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .section_about-wrapper--content_text {
+  .section_about-wrapper--content_text .title {
     font-size: 25px;
   }
 }
 @media screen and (max-width: 768px) {
-  .section_about-wrapper--content_text {
+  .section_about-wrapper--content_text .title {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 480px) {
-  .section_about-wrapper--content_text {
-    font-size: 16px;
+  .section_about-wrapper--content_text .title {
+    font-size: 18px;
   }
 }
 .section_about-wrapper--content_text-desc {

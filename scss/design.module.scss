@@ -6,6 +6,11 @@
         padding-top: 100px;
     }
 
+    @media screen and (max-width: 480px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     &-wrapper {
         &--content {
             &_items {
@@ -29,6 +34,10 @@
                             min-height: 89px;
                             height: 100%;
                             width: 90%;
+
+                            @media screen and (max-width:480px) {
+                                width: 100%;
+                            }
                         }
 
                         @media screen and (max-width:480px) {
@@ -44,6 +53,10 @@
 
                     &.top {
                         flex-direction: row;
+
+                        @media screen and (max-width:480px) {
+                            flex-direction: column;
+                        }
                     }
 
                     &--left {
@@ -53,6 +66,10 @@
 
                         .desc {
                             width: 59%;
+
+                            @media screen and (max-width:480px) {
+                                width: 100%;
+                            }
                         }
                     }
 
@@ -77,11 +94,18 @@
                             gap: 32px;
                             justify-content: space-between;
 
+                            @media screen and (max-width:768px) {
+                                padding: 10px;
+                            }
+
+                            @media screen and (max-width:480px) {
+                                width: auto;
+                            }
+
                             &-info {
                                 .desc {
                                     width: 100%;
                                     text-transform: lowercase;
-                                    width: 80%;
                                 }
                             }
                         }
@@ -113,6 +137,10 @@
                 &-fonts {
                     padding-top: 19px;
 
+                    @media screen and (max-width:768px) {
+                        padding-top: 30px;
+                    }
+
                     &-font {
                         display: flex;
                         width: 100%;
@@ -129,10 +157,13 @@
                             max-width: 340px;
                             align-items: center;
 
-                            &:nth-child(1) {
-                                @media screen and (max-width:480px) {
-                                    margin-top: 20px;
-                                }
+                            @media screen and (max-width:768px) {
+                                margin: 0 auto;
+                            }
+
+                            @media screen and (max-width:480px) {
+                                max-width: unset;
+                                width: auto;
                             }
 
                             &--top {
@@ -229,6 +260,19 @@
                     align-items: center;
                     width: 100%;
 
+                    @media screen and (max-width:1024px) {
+                        gap: 20px;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        flex-direction: column;
+                        gap: 50px;
+                    }
+
+                    svg {
+                        width: 100%;
+                    }
+
                     &--left {
                         display: flex;
                         flex-direction: column;
@@ -240,10 +284,21 @@
                         flex-direction: column;
                         gap: 38px;
                     }
+
+                    &--left,
+                    &--right {
+                        @media screen and (max-width:768px) {
+                            width: 100%;
+                        }
+                    }
                 }
 
                 &-icons {
                     padding-top: 174px;
+
+                    @media screen and (max-width:768px) {
+                        padding-top: 50px;
+                    }
                 }
             }
         }

@@ -1,9 +1,25 @@
 .section_highlights {
   padding-top: 157px;
 }
+@media screen and (max-width: 768px) {
+  .section_highlights {
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_highlights {
+    padding-top: 50px;
+  }
+}
 .section_highlights-wrapper--content .text-card {
   display: flex;
   gap: 192px;
+}
+@media screen and (max-width: 768px) {
+  .section_highlights-wrapper--content .text-card {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 .section_highlights-wrapper--content .text-card--left {
   display: flex;
@@ -11,20 +27,66 @@
   gap: 50px;
   width: 90%;
 }
+@media screen and (max-width: 768px) {
+  .section_highlights-wrapper--content .text-card--left {
+    width: 100%;
+  }
+}
 .section_highlights-wrapper--content .text-card--right {
   width: 90%;
+}
+@media screen and (max-width: 768px) {
+  .section_highlights-wrapper--content .text-card--right {
+    width: 100%;
+  }
 }
 .section_highlights-wrapper--content .text-card--right_info .desc {
   color: var(--Brand-Gold-600, #E0A425);
   font-size: 40px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1280px) {
+  .section_highlights-wrapper--content .text-card--right_info .desc {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .section_highlights-wrapper--content .text-card--right_info .desc {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_highlights-wrapper--content .text-card--right_info .desc {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_highlights-wrapper--content .text-card--right_info .desc {
+    font-size: 18px;
+  }
+}
 .section_highlights-wrapper--content .text-card--image {
   position: relative;
+}
+.section_highlights-wrapper--content .text-card--image img {
+  width: 100%;
 }
 .section_highlights-wrapper--content .text-card--image_icon {
   position: absolute;
   bottom: 130px;
+}
+@media screen and (max-width: 768px) {
+  .section_highlights-wrapper--content .text-card--image_icon {
+    bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_highlights-wrapper--content .text-card--image_icon {
+    bottom: 40px;
+  }
+}
+.section_highlights-wrapper--content .text-card--image_icon svg {
+  width: 100%;
 }
 
 /*# sourceMappingURL=highlights.module.css.map */
