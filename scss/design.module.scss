@@ -91,15 +91,17 @@
                             background-color: #F6F2EE;
                             display: flex;
                             flex-direction: column;
-                            gap: 32px;
                             justify-content: space-between;
 
-                            @media screen and (max-width:768px) {
-                                padding: 10px;
+                            @media screen and (max-width:1024px) {
+                                padding: 0px;
+                                justify-content: space-around;
                             }
 
                             @media screen and (max-width:480px) {
                                 width: auto;
+                                padding: 39px 32px 20px 31px;
+                                justify-content: space-between;
                             }
 
                             &-info {
@@ -143,12 +145,21 @@
 
                     &-font {
                         display: flex;
-                        width: 100%;
                         justify-content: space-between;
-                        padding-top: 38px;
+                        width: 98%;
+                        max-width: calc(1440px - 2%);
+                        margin: 0 auto;
+                        padding: 38px 50px 0px;
+
+                        @media screen and (max-width:1024px) {
+                            padding-left: 0;
+                            padding-right: 0;
+                            gap: 30px;
+                        }
 
                         @media screen and (max-width:768px) {
                             flex-direction: column;
+                            gap: 0;
                         }
 
                         .card-right {

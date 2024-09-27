@@ -593,17 +593,19 @@
   background-color: #F6F2EE;
   display: flex;
   flex-direction: column;
-  gap: 32px;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .section_design-wrapper--content_items .text-card--card_info {
-    padding: 10px;
+    padding: 0px;
+    justify-content: space-around;
   }
 }
 @media screen and (max-width: 480px) {
   .section_design-wrapper--content_items .text-card--card_info {
     width: auto;
+    padding: 39px 32px 20px 31px;
+    justify-content: space-between;
   }
 }
 .section_design-wrapper--content_items .text-card--card_info-info .desc {
@@ -634,13 +636,23 @@
 }
 .section_design-wrapper--content_items-fonts-font {
   display: flex;
-  width: 100%;
   justify-content: space-between;
-  padding-top: 38px;
+  width: 98%;
+  max-width: calc(1440px - 2%);
+  margin: 0 auto;
+  padding: 38px 50px 0px;
+}
+@media screen and (max-width: 1024px) {
+  .section_design-wrapper--content_items-fonts-font {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 30px;
+  }
 }
 @media screen and (max-width: 768px) {
   .section_design-wrapper--content_items-fonts-font {
     flex-direction: column;
+    gap: 0;
   }
 }
 .section_design-wrapper--content_items-fonts-font .card-right {
