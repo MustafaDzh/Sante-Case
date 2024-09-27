@@ -6,6 +6,7 @@
 @import "./desktop.module.scss";
 @import "./mobile.module.scss";
 @import "./highlights.module.scss";
+@import "./showcase.module.scss";
 
 * {
     padding: 0;
@@ -160,10 +161,14 @@ html body ul {
 }
 
 .section {
-    width: 98%;
+    width: 88%;
     max-width: calc(1440px - 2%);
     margin: 0 auto;
     padding: 0px 50px;
+
+    @media screen and (max-width:1024px) {
+        width: 95%;
+    }
 
     @media screen and (max-width:480px) {
         padding: 0px 20px;
@@ -189,7 +194,7 @@ html body ul {
 
         @media screen and (max-width:1440px) {
             top: 1250px;
-            right: 50px;
+            right: 20px;
         }
 
         &--nav {
@@ -236,7 +241,8 @@ html body ul {
                         right: calc(100% + 10px);
                         transform: translateY(-50%);
                         opacity: 0;
-                        white-space: nowrap;
+                        text-align: center;
+                        // white-space: nowrap;
                         transition: opacity 0.5s ease-in-out, color 0.5s ease-in-out;
 
                         @media screen and (max-width: 1024px) {
@@ -282,7 +288,7 @@ html body ul {
                     top: 0;
 
                     @media screen and (max-width:1440px) {
-                        right: 50px;
+                        right: 20px;
                     }
                 }
             }

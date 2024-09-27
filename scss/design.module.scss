@@ -54,7 +54,7 @@
                     &.top {
                         flex-direction: row;
 
-                        @media screen and (max-width:480px) {
+                        @media screen and (max-width:768px) {
                             flex-direction: column;
                         }
                     }
@@ -80,6 +80,11 @@
                         display: flex;
                         justify-content: flex-end;
 
+                        @media screen and (max-width:768px) {
+                            flex-direction: column;
+                            ;
+                        }
+
                         &_info {
                             width: 100%;
                             position: absolute;
@@ -98,10 +103,12 @@
                                 justify-content: space-around;
                             }
 
-                            @media screen and (max-width:480px) {
-                                width: auto;
+                            @media screen and (max-width:768px) {
+                                position: initial;
+                                width: 100%;
+                                transform: none;
                                 padding: 39px 32px 20px 31px;
-                                justify-content: space-between;
+                                gap: 20px;
                             }
 
                             &-info {
@@ -131,8 +138,66 @@
                         }
                     }
 
-                    .svg-icon {
+                    .svg-icons {
                         display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+
+                        .svg-icon {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            &.color {
+                                min-width: 152px;
+                                color: #fff;
+                                height: 47px;
+                                font-size: 16px;
+                                margin-bottom: 20px;
+
+                                &.first {
+                                    background-color: #136062;
+                                }
+
+                                &.second {
+                                    background-color: #4A5C5C;
+                                }
+
+                                &.third {
+                                    background-color: #E0A425;
+                                }
+
+                                &.fourth {
+                                    background-color: #BAA99D;
+                                }
+
+                                &.fifth {
+                                    background-color: #F6F2EE;
+                                    color: #BAA99D;
+                                }
+
+                                &.sixth {
+                                    background-color: #593932;
+                                }
+
+                                @media screen and (max-width:480px) {
+                                    min-width: calc(33.33% - 10px);
+                                    margin-bottom: 10px;
+                                    font-size: 13px;
+                                }
+                            }
+
+                            &.icon {
+                                margin-bottom: 30px;
+
+                                @media screen and (max-width:480px) {
+                                    min-width: calc(33.33% - 10px);
+                                    margin-bottom: 20px;
+                                    font-size: 13px;
+                                }
+                            }
+                        }
                     }
                 }
 

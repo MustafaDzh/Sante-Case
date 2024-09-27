@@ -67,6 +67,11 @@
     width: 70%;
   }
 }
+@media screen and (max-width: 480px) {
+  .section_mobile-wrapper--content_bottom-first img, .section_mobile-wrapper--content_bottom-second img {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 768px) {
   .section_mobile-wrapper--content_bottom-first {
     flex-direction: column;
