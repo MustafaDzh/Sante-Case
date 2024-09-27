@@ -126,7 +126,7 @@
 }
 .section_desktop-wrapper--content_bottom-secondPhoto {
   width: 100%;
-  transform: translate(-130px, -20px);
+  transform: translate(-130px, -60px);
   padding-bottom: 100px;
 }
 @media screen and (max-width: 1440px) {
