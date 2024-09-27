@@ -853,12 +853,7 @@
   }
 }
 .section_sitemap-wrapper--content_map-image {
-  height: 927px;
-}
-@media screen and (max-width: 1024px) {
-  .section_sitemap-wrapper--content_map-image {
-    height: 742px;
-  }
+  height: 933px;
 }
 @media screen and (max-width: 480px) {
   .section_sitemap-wrapper--content_map-image {

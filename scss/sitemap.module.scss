@@ -64,11 +64,7 @@
                 }
 
                 &-image {
-                    height: 927px;
-
-                    @media screen and (max-width:1024px) {
-                        height: 742px;
-                    }
+                    height: 933px;
 
                     @media screen and (max-width:480px) {
                         height: 200px;
