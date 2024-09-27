@@ -196,7 +196,13 @@
   }
 }
 .section_design-wrapper--content_items-fonts-font .card-right--top_desc .second-svg {
-  height: 189px;
+  min-height: 189px;
+  height: 100%;
+}
+@media screen and (max-width: 480px) {
+  .section_design-wrapper--content_items-fonts-font .card-right--top_desc .second-svg {
+    min-height: 70px;
+  }
 }
 .section_design-wrapper--content_items-colors, .section_design-wrapper--content_items-buttons {
   display: flex;

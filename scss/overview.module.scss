@@ -148,7 +148,7 @@
                 &-icons {
                     display: flex;
                     justify-content: center;
-                    align-items: flex-start;
+                    align-items: center;
                     gap: 128px;
                     width: 82%;
                     background: #F9F9F9;
@@ -193,6 +193,7 @@
                         .icon-svg {
                             display: flex;
                             justify-content: center;
+                            align-items: center;
                             width: 100%;
                             margin-bottom: 15px;
                         }

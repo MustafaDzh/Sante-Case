@@ -215,7 +215,12 @@
                                     }
 
                                     .second-svg {
-                                        height: 189px;
+                                        min-height: 189px;
+                                        height: 100%;
+
+                                        @media screen and (max-width:480px) {
+                                            min-height: 70px;
+                                        }
                                     }
                                 }
                             }
