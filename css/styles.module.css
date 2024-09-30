@@ -508,6 +508,7 @@
 .section_design {
   padding-top: 203px;
   padding-bottom: 104px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1024px) {
   .section_design {
@@ -1049,6 +1050,7 @@
 
 .section_desktop {
   padding-top: 126px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1024px) {
   .section_desktop {
@@ -1547,10 +1549,10 @@ html {
 }
 
 html body {
-  cursor: default;
-  background-color: #F9F9F9;
-  color: #2E3140;
-  overflow-x: hidden;
+  overflow-x: initial;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .unbounded-300 {
@@ -1713,111 +1715,90 @@ html body ul {
 }
 
 .page {
-  display: flex;
-  flex-direction: column;
   position: relative;
-  overflow: hidden;
 }
 .page .miniNav {
-  position: absolute;
-  top: 1400px;
-  right: 80px;
-  height: calc(100% - 1500px);
-  z-index: 1000;
-}
-@media screen and (max-width: 1440px) {
-  .page .miniNav {
-    top: 1250px;
-    right: 20px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .page .miniNav--nav {
-    margin-right: 10px;
-    display: none;
-  }
-}
-.page .miniNav--nav_content {
   position: sticky;
-  top: 0;
+  position: -webkit-sticky;
+  top: 88px;
+  float: right;
+  margin-right: 5%;
+  margin-top: 17.785rem;
+  z-index: 2;
 }
-.page .miniNav--nav_content .line {
+.page .miniNav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page .miniNav-content--stage {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.page .miniNav-content--stage::before {
+  content: "";
+  display: block;
   width: 1px;
   height: 8px;
   background: #333;
 }
-.page .miniNav--nav_content .nav-content {
+.page .miniNav-content--stage::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 8px;
+  background: #333;
+}
+.page .miniNav-content--stage a {
   display: flex;
-  width: 32px;
-  height: 32px;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 32px;
+  width: 32px;
+  background: #fff;
   border-radius: 50%;
-  background: #FFF;
+  color: #333;
+  font-size: 14px;
+  line-height: 150%;
   position: relative;
-  cursor: pointer;
-  transition: background-color 0.5s ease-in-out;
+  transition: 0.2s linear;
 }
-@media screen and (max-width: 1024px) {
-  .page .miniNav--nav_content .nav-content {
-    width: 22px;
-    height: 22px;
-  }
+.page .miniNav-content--stage a:hover {
+  background: #d9d9d9;
 }
-@media screen and (max-width: 768px) {
-  .page .miniNav--nav_content .nav-content {
-    width: 20px;
-    height: 20px;
-  }
-}
-.page .miniNav--nav_content .nav-content--text {
+.page .miniNav-content--stage a p {
   position: absolute;
   top: 50%;
-  right: calc(100% + 10px);
   transform: translateY(-50%);
-  opacity: 0;
-  text-align: center;
-  transition: opacity 0.5s ease-in-out, color 0.5s ease-in-out;
-}
-@media screen and (max-width: 1024px) {
-  .page .miniNav--nav_content .nav-content--text {
-    font-size: 14px;
-  }
-}
-.page .miniNav--nav_content .nav-content:hover, .page .miniNav--nav_content .nav-content.active {
-  background-color: #FFCE34;
-}
-.page .miniNav--nav_content .nav-content:hover .nav-content--text, .page .miniNav--nav_content .nav-content.active .nav-content--text {
-  opacity: 1;
+  right: 100%;
   color: #FFCE34;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s linear;
 }
-.page .miniNav--nav_content-stage {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
+.page .miniNav-content--stage a p:hover {
+  right: calc(100% + 12px);
+  opacity: 1;
+  visibility: visible;
+  transition: 0.2s linear;
 }
-@media screen and (max-width: 768px) {
-  .page .miniNav--nav_content-stage {
-    gap: 5px;
-  }
+.page .miniNav-content--stage.active-id a {
+  background: #FFCE34;
+  color: #fff;
+  transition: 0.2s linear;
 }
-@media screen and (max-width: 768px) {
-  .page .miniNav--nav_content-stage p svg {
-    width: 7px;
-    height: 8px;
-  }
-}
-.page .miniNav--nav_content.fixed {
-  position: fixed !important;
-  z-index: 1000;
-  right: 80px;
-  top: 0;
-}
-@media screen and (max-width: 1440px) {
-  .page .miniNav--nav_content.fixed {
-    right: 20px;
-  }
+.page .miniNav-content--stage.active-id a p {
+  right: calc(100% + 12px);
+  opacity: 1;
+  visibility: visible;
+  transition: 0.2s linear;
 }
 
 .title {
