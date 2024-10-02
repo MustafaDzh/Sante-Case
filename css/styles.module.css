@@ -1714,9 +1714,6 @@ html body ul {
   }
 }
 
-.page {
-  position: relative;
-}
 .page .miniNav {
   position: sticky;
   position: -webkit-sticky;
