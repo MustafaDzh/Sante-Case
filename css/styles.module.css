@@ -548,7 +548,7 @@
 }
 @media screen and (max-width: 480px) {
   .section_design-wrapper--content_items .text-card .desc {
-    min-height: unset;
+    min-height: auto;
   }
 }
 .section_design-wrapper--content_items .text-card .image img {
@@ -1154,7 +1154,7 @@
     justify-content: center;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .section_desktop-wrapper--content_bottom {
     gap: 20px;
   }
@@ -1722,6 +1722,11 @@ html body ul {
   margin-right: 5%;
   margin-top: 17.785rem;
   z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .page .miniNav {
+    display: none;
+  }
 }
 .page .miniNav-content {
   display: flex;

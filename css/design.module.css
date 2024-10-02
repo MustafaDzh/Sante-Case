@@ -41,7 +41,7 @@
 }
 @media screen and (max-width: 480px) {
   .section_design-wrapper--content_items .text-card .desc {
-    min-height: unset;
+    min-height: auto;
   }
 }
 .section_design-wrapper--content_items .text-card .image img {

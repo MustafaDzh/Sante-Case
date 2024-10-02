@@ -189,6 +189,10 @@ html body ul {
         margin-top: 17.785rem;
         z-index: 2;
 
+        @media screen and (max-width:768px) {
+            display: none;
+        }
+
         &-content {
             display: flex;
             flex-direction: column;
